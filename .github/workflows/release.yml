@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: docker build . -t zheke/nest-app
-      - run: echo "${{secrets.DOCKER_PASSWORD}}" | docker login -u ${{secrets.DOCKERHUB_USERNAME}} --password-stdin
+      - run: echo "dckr_pat_PUOCA91fbZrtzJGhrZRpx2IMjGY" | docker login -u zheke --password-stdin
       - run: docker push zheke/nest-app
 
 
