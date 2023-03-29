@@ -15,4 +15,3 @@ jobs:
       - run: docker push zheke/nest-app
 
 
-# this is awesome
